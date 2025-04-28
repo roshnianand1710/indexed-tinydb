@@ -1,25 +1,9 @@
-# Indexed TinyDB
+Indexed TinyDB
 
-> **⚠️ Experimental – research prototype only. Not ready for production use.**
+This is a proof-of-concept project which experiments with adding custom user-defined indexing in TinyDB.
 
-Indexed TinyDB is a lightweight extension of [TinyDB](https://github.com/msiemens/tinydb) that experiments with adding simple index support to accelerate lookups.
+The user decides which attribute to index and which level of the json document to index.
+Hash indexing : Exact-match queries 
+B+ Tree indexing : Range queries
 
-## Features
-
-- **Exact‑match queries**  
-- **Range queries**
-
-## Current Limitations
-
-- Supports **one table per JSON file** only – extending to multiple tables will require further work.
-- Several core TinyDB features are still missing or incomplete.
-
-## Project Status
-
-This project is in an early proof‑of‑concept stage and exists solely for research purposes. Expect breaking changes and incomplete functionality.
-
-Contributions and ideas are welcome! Feel free to open issues or pull requests.
-
----
-
-*(C) 2025 – Frank1124987*
+Built for research purposes only.
